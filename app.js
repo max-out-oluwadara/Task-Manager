@@ -1,6 +1,7 @@
 //Using class queryselector for htnl elements
 const title =  document.querySelector('.title');
 const description =  document.querySelector('.description');
+const tbody =  document.querySelector('.tbody');
 const addBtn =  document.querySelector('.addBtn');
 
 
@@ -14,14 +15,16 @@ const addTask = () => {
     const myArr = []
     myArr.push(myObj)
 
-    return addToLocalstaorage(myArr)
+
+    console.log(tbody)
+    //return addToLocalstaorage(myArr)
 
 }
 
-const addToLocalstaorage = (info) => {
+// const addToLocalstaorage = (info) => {
   
 
-}
+// }
 
 
 addBtn.addEventListener('click', addTask)
